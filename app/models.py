@@ -27,29 +27,6 @@ class User(UserMixin, db.Model):
         return check_password_hash(self.password_hash, password)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Mission(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     body = db.Column(db.String(140))
